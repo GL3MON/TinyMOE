@@ -23,4 +23,4 @@ jobs:
           chmod 600 ~/.kaggle/kaggle.json
 
       - name: Upload dataset update
-        run: kaggle datasets version -p . -m "auto update from github"
+        run: kaggle datasets version -p . -m "auto update from github" --dir-mode
